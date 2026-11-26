@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PsInfotech - Digital Marketing Institute and Coaching Centre in Gurdaspur, Punjab. Learn SEO, Digital Marketing and Social Media Marketing.">
+<title>PsInfotech | Digital Marketing Institute Gurdaspur</title>
+<style>
+:root {
+  --blue:#1769e8;
+  --dark:#102344;
+  --light:#f3f7ff;
+  --white:#fff;
+  --text:#53627a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:var(--dark);line-height:1.7}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,90%);margin:auto}
+header{background:white;position:sticky;top:0;z-index:10;
+box-shadow:0 2px 14px #10234412}
+nav{height:76px;display:flex;align-items:center;
+justify-content:space-between}
+.logo{font-size:25px;font-weight:800;color:var(--blue)}
+.logo span{color:var(--dark)}
+.navlinks{display:flex;gap:24px;align-items:center}
+.navlinks a:hover{color:var(--blue)}
+.btn{display:inline-block;background:var(--blue);color:white;
+padding:12px 23px;border-radius:8px;font-weight:700}
+.btn:hover{background:#0c50bc}
+.btn-outline{background:white;color:var(--blue);
+border:1px solid var(--blue)}
+.menu{display:none;background:none;border:0;font-size:27px}
+.hero{background:linear-gradient(120deg,#edf4ff,#fff);
+padding:95px 0}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;
+gap:50px;align-items:center}
+.tag{display:inline-block;color:var(--blue);background:#dceaff;
+padding:6px 14px;border-radius:30px;font-weight:bold;
+font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(38px,5vw,59px);line-height:1.15;
+margin-bottom:20px}
+h1 span{color:var(--blue)}
+.hero p{color:var(--text);font-size:18px;margin-bottom:28px}
+.hero-img{background:linear-gradient(145deg,#1769e8,#102344);
+border-radius:24px;padding:35px;color:white;min-height:310px;
+display:flex;flex-direction:column;justify-content:center;
+text-align:center}
+.hero-img .big{font-size:75px}
+.hero-img h2{font-size:28px;margin:10px}
+section{padding:78px 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 42px}
+.section-head h2{font-size:35px;margin-bottom:10px}
+.section-head p,.muted{color:var(--text)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{padding:28px;border:1px solid #e7edf7;
+border-radius:15px;background:white;transition:.2s}
+.card:hover{transform:translateY(-5px);
+box-shadow:0 12px 30px #10234412}
+.card-icon{font-size:35px;margin-bottom:12px}
+.card h3{margin-bottom:10px;font-size:21px}
+.card p{color:var(--text)}
+.about{background:var(--light)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;
+gap:45px;align-items:center}
+.about-panel{background:var(--dark);color:white;
+padding:38px;border-radius:20px}
+.about-panel h3{font-size:28px;margin-bottom:14px}
+.checks{list-style:none;margin-top:20px}
+.checks li{margin:12px 0}
+.checks li:before{content:"✓";color:#63a0ff;
+font-weight:bold;margin-right:10px}
+.why{background:#102344;color:white}
+.why .section-head p{color:#c6d4e8}
+.why .card{background:#1a3359;border-color:#30466a}
+.why .card p{color:#d0dced}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact-box{background:var(--light);padding:30px;
+border-radius:16px}
+.contact-box p{margin:12px 0;color:var(--text)}
+form{display:grid;gap:14px}
+input,select,textarea{width:100%;padding:14px;
+border:1px solid #d7e0ed;border-radius:8px;
+font:inherit;background:white}
+textarea{min-height:110px;resize:vertical}
+button{cursor:pointer;border:0;font:inherit}
+form button{padding:14px;background:var(--blue);
+color:white;border-radius:8px;font-weight:bold}
+footer{background:#0b1930;color:white;padding:35px 0}
+.footer-row{display:flex;justify-content:space-between;
+gap:20px;flex-wrap:wrap}
+footer p{color:#c4d0e1}
+footer a{color:#a9caff}
+.float-wa{position:fixed;bottom:22px;right:22px;
+background:#20b968;color:white;padding:13px 19px;
+border-radius:40px;font-weight:bold;box-shadow:0 5px 20px #0002;
+z-index:20}
+@media(max-width:760px){
+ .menu{display:block}
+ .navlinks{display:none;position:absolute;top:76px;left:0;
+ width:100%;background:white;padding:22px;flex-direction:column;
+ align-items:flex-start}
+ .navlinks.show{display:flex}
+ .hero{padding:65px 0}
+ .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+ .cards{grid-template-columns:1fr}
+ .section-head h2{font-size:29px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<nav>
+<a class="logo" href="#home">Ps<span>Infotech</span></a>
+<button class="menu" onclick="document.querySelector('.navlinks').classList.toggle('show')" aria-label="Toggle menu">☰</button>
+<div class="navlinks">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#why">Why Us</a>
+<a href="#contact">Contact</a>
+<a class="btn" href="#contact">Enquire Now</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<span class="tag">WELCOME TO PSINFOTECH</span>
+<h1>Learn Digital Skills.<br><span>Build Your Future.</span></h1>
+<p>Start your journey towards a brighter career with professional Digital Marketing training and coaching in Gurdaspur, Punjab.</p>
+<a class="btn" href="#courses">Explore Courses →</a>
+<a class="btn btn-outline" href="#contact">Contact Us</a>
+</div>
+<div class="hero-img">
+<div class="big">💻</div>
+<h2>Learn. Practice. Grow.</h2>
+<p>Digital Skills for Tomorrow's Opportunities</p>
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="container about-grid">
+<div>
+<span class="tag">ABOUT OUR INSTITUTE</span>
+<h2 style="font-size:34px;margin-bottom:15px">Welcome to PsInfotech</h2>
+<p class="muted">PsInfotech is a Digital Marketing Institute and Coaching Centre located in Gurdaspur, Punjab. We aim to help students and aspiring professionals develop valuable digital skills through structured learning.</p>
+<p class="muted" style="margin-top:15px">Our focus is on Digital Marketing, Search Engine Optimization and Social Media Marketing.</p>
+<a class="btn" style="margin-top:22px" href="#contact">Get in Touch</a>
+</div>
+<div class="about-panel">
+<h3>Learn Skills That Matter</h3>
+<p>Take the next step in your learning journey with PsInfotech.</p>
+<ul class="checks">
+<li>Digital marketing education</li>
+<li>SEO learning</li>
+<li>Social media marketing</li>
+<li>Career-focused skill development</li>
+<li>Student enquiry support</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="courses">
+<div class="container">
+<div class="section-head">
+<span class="tag">OUR COURSES</span>
+<h2>Explore Our Courses</h2>
+<p>Develop practical knowledge and build your digital skill set with our learning programmes.</p>
+</div>
+<div class="cards">
+<div class="card">
+<div class="card-icon">📈</div>
+<h3>Digital Marketing</h3>
+<p>Understand digital marketing concepts, online promotion strategies, content marketing and digital platforms.</p>
+</div>
+<div class="card">
+<div class="card-icon">🔍</div>
+<h3>Search Engine Optimization (SEO)</h3>
+<p>Learn keyword research, on-page SEO, off-page SEO and the fundamentals of improving website visibility.</p>
+</div>
+<div class="card">
+<div class="card-icon">📱</div>
+<h3>Social Media Marketing</h3>
+<p>Learn social media strategies, content planning, audience engagement and online brand promotion.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="about">
+<div class="container">
+<div class="section-head">
+<span class="tag">COACHING CENTRE</span>
+<h2>Learn, Improve and Grow</h2>
+<p>We provide a learning environment focused on knowledge, confidence and skill development.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="card-icon">🎯</div>
+<h3>Skill Development</h3>
+<p>Build useful knowledge and develop skills for the digital world.</p></div>
+<div class="card"><div class="card-icon">📚</div>
+<h3>Structured Learning</h3>
+<p>Explore learning opportunities through our coaching and training programmes.</p></div>
+<div class="card"><div class="card-icon">🚀</div>
+<h3>Career Growth</h3>
+<p>Work towards your personal and professional learning goals.</p></div>
+</div>
+</div>
+</section>
+
+<section class="why" id="why">
+<div class="container">
+<div class="section-head">
+<span class="tag">WHY PSINFOTECH</span>
+<h2>Why Choose PsInfotech?</h2>
+<p>Your learning journey starts with the right skills and the right guidance.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="card-icon">💡</div>
+<h3>Practical Skills</h3>
+<p>Focus on useful digital marketing knowledge.</p></div>
+<div class="card"><div class="card-icon">🎓</div>
+<h3>Learning Support</h3>
+<p>A learning-focused approach to skill development.</p></div>
+<div class="card"><div class="card-icon">📍</div>
+<h3>Local Institute</h3>
+<p>Find us in Gurdaspur, Punjab, India.</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-head">
+<span class="tag">GET IN TOUCH</span>
+<h2>Start Your Learning Journey</h2>
+<p>Interested in our courses? Contact PsInfotech for course information and admission enquiries.</p>
+</div>
+<div class="contact-grid">
+<div class="contact-box">
+<h3>Contact Information</h3>
+<p><strong>Business:</strong> PsInfotech</p>
+<p><strong>Location:</strong> Gurdaspur, Punjab, India</p>
+<p><strong>Phone:</strong> <a href="tel:+919780937715">9780937715</a></p>
+<p><strong>Email:</strong> <a href="mailto:priyasharma78351@gmail.com">priyasharma78351@gmail.com</a></p>
+<a class="btn" target="_blank" rel="noopener" href="https://wa.me/919780937715">Chat on WhatsApp</a>
+</div>
+<div>
+<h3 style="margin-bottom:15px">Student Enquiry Form</h3>
+<form id="enquiry">
+<input id="name" placeholder="Your Full Name" required>
+<input id="phone" type="tel" placeholder="Your Mobile Number" required>
+<input id="email" type="email" placeholder="Your Email Address">
+<select id="course" required>
+<option value="">Select Interested Course</option>
+<option>Digital Marketing</option>
+<option>SEO</option>
+<option>Social Media Marketing</option>
+<option>Other Coaching Enquiry</option>
+</select>
+<textarea id="message" placeholder="Your Message"></textarea>
+<button type="submit">Submit Enquiry on WhatsApp →</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-row">
+<div>
+<h2>PsInfotech</h2>
+<p>Digital Marketing Institute & Coaching Centre</p>
+<p>Gurdaspur, Punjab, India</p>
+</div>
+<div>
+<p>Call: <a href="tel:+919780937715">9780937715</a></p>
+<p>Email: <a href="mailto:priyasharma78351@gmail.com">priyasharma78351@gmail.com</a></p>
+<p>© <span id="year"></span> PsInfotech. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<a class="float-wa" href="https://wa.me/919780937715" target="_blank" rel="noopener">☘ WhatsApp</a>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("enquiry").addEventListener("submit",function(e){
+ e.preventDefault();
+ const name=document.getElementById("name").value;
+ const phone=document.getElementById("phone").value;
+ const email=document.getElementById("email").value;
+ const course=document.getElementById("course").value;
+ const message=document.getElementById("message").value;
+ const text=`Hello PsInfotech! I want to enquire about your courses.
+
+Name: ${name}
+Mobile: ${phone}
+Email: ${email}
+Course: ${course}
+Message: ${message}`;
+ window.open("https://wa.me/919780937715?text="+encodeURIComponent(text),"_blank");
+});
+</script>
+</body>
+</html>
